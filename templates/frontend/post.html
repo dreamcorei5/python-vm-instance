@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ลงประกาศ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link href="{%static 'css/style.css'%}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{%static 'img/logo.png' %}" width="200">
+                    <!-- <img src="https://drive.google.com/uc?id=1obKOJHnuAsSjtmnYKPBxbpT857r_Ae4q" width="200"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <a href="login.html" class="btn btn-outline-link" type="button">เข้าสู่ระบบ</a>
+                    <a href="register.html" class="btn btn-primary" type="button">สมัครสมาชิก</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container border border-1 bg-white shadow px-3 px-sm-5 py-3 mb-5 d-grid gap-3 rounded-5">
+            <div class="d-flex justify-content-center align-items-end mt-4 mb-5">
+                <div class="icon-post">
+                    <img src="{%static 'img/post.png'%} " width="100">
+                    <!-- <img src="https://drive.google.com/uc?id=1_7dr9tLpJ4EDan2wz1dRcHSMZZVODSpb" width="100"> -->
+                </div>
+                <h1 class="text-purple2 mb-0">ลงประกาศ</h1>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="mb-0">เพศของคุณ (แสดงหน้าเว็ปไซต์) (เลือกได้ 1 เพศ)</p>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ผู้ชาย</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ผู้หญิง</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">เกย์รับ</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">เกย์รุก</button></div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ทอม</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ดี้</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">เลสเบี้ยน</button></div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">สาวสองยังไม่แปลง</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">สาวสองยังแปลงแล้ว</button></div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="mb-0">เพศของคุณ (แสดงหน้าเว็ปไซต์) (เลือกได้ 1 เพศ)</p>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5 active">ผู้ชาย</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ผู้หญิง</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-lgbtqia px-4 rounded-5">เกย์รับ</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-lgbtqia px-4 rounded-5">เกย์รุก</button></div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ทอม</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">ดี้</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">เลสเบี้ยน</button></div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-auto"><button type="button" class="btn btn-outline-primary px-4 rounded-5">สาวสองยังไม่แปลง</button></div>
+                    <div class="col-auto"><button type="button" class="btn btn-lgbtqia px-4 rounded-5">สาวสองแปลงแล้ว</button></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">อายุ</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">เรทราคา</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">จังหวัดที่รับงาน</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">อำเภอ</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>         
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">โซน</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>             
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">ID Line</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label for="inputID" class="form-label">ชื่อที่ใช้แสดง</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <label for="inputID" class="form-label">ส่วนสูง</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>
+                <div class="col-6 col-sm-3">
+                    <label for="inputID" class="form-label">น้ำหนัก</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>                
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm-3">
+                    <label for="inputID" class="form-label">น้ำหนัก</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>
+                <div class="col-sm-3">
+                    <label for="inputID" class="form-label">เอว</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>       
+                <div class="col-sm-3">
+                    <label for="inputID" class="form-label">สะโพก</label>
+                    <input type="text" class="form-control" id="inputID">
+                </div>               
+            </div>
+            <div class="row mb-4">
+                <div class="col-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            พูดภาษาอังกฤษได้
+                        </label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked>
+                        <label class="form-check-label" for="flexCheckDefault2">
+                            ฉีดวัคซีนแล้ว
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <label for="inputID" class="form-label">รายละเอียดเพิ่มเติม</label>
+                    <textarea class="form-control" placeholder="" style="height: 100px"></textarea>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <label for="inputUpload" class="form-label text-center d-block">โพสต์ของท่านจะถูกเพิกถอนการแสดงผล หากตรวจพบภาพอนาจาร ที่ไม่ได้มีการ censor รวมถึงการแอบอ้างใช้ภาพบุคคลอื่น</label>
+                    <input class="inputUpload" type="file" value="" id="inputUpload">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10">
+                    <p>
+                        เลือกความชอบ หรือ สิ่งที่เป็นเรา อย่างน้อย 10 อย่าง<br/> 
+                        สำหรับการเข้าถึงของผู้ใช้งานระดับสูง(ไม่แสดงในโพสต์)
+                    </p>
+                    <div class="row">
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">พาเที่ยวเหมาวัน</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">แลกคู่</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">รับของเล่น อุปกรณ์</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">รับสวิง</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">พากินข้าว ดูหนัง</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">คุยสนุก</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">อ่อนโยน สุภาพ</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ซาดิสม์</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">เอ็นวี</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ในรถส่วนตัว</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">เป็นตากล้องให้ได้</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">สายดุดัน</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">เอ็นอัพ</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">นอกสถานที่</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">BDSM</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ดูแล เทคแคร์ดี</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ถ่ายภาพหรือถ่ายคลิปได้</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">Skinship</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ร้องดัง</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">แต่งชุดตามคำขอ</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ฟิวแฟน</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">หุ่นหมี-อวบ</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ไม่ร้องเลย</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">นวดได้</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">สายเปย์</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">หุ่นผอม</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ชงเหล้าเก่ง</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">มีเจ้าของอยู่แล้ว</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">ดื่มเป็นเพื่อน</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">หุ่นดี</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">เต้นเก่ง</button></div>
+                        <div class="col-6 col-sm-3 mb-3 px-1 px-sm-3"><button type="button" class="btn btn-outline-primary rounded-5 w-100 px-0 px-sm-1 py-1">เป็นผู้รับฟังที่ดี</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        การปักหมุดจะแสดงสถานที่ปักหมุดเป็นขอบเขต เพื่อความปลอดภัย
+                    </p>
+                    <iframe class="w-100 mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30999.8171418741!2d100.52743072211456!3d13.780251431048445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c1d8f1f1c13%3A0x30100b25de24e60!2z4LmB4LiC4Lin4LiHIOC4quC4suC4oeC5gOC4quC4meC5g-C4mSDguYDguILguJXguJ7guI3guLLguYTguJcg4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIDEwNDAw!5e0!3m2!1sth!2sth!4v1672652953498!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="text-center">
+                        *การอัพโหลดภาพจะถูกตรวจสอบตลอดเวลา*<br/>
+                        *เมื่อใช้งานแพคเกจแล้วจะไม่สามารถแก้ไขประกาศได้*<br/>
+                        *การใช้ภาพบุคคลอื่นจะถูกระงับ โดยไม่ต้องแจ้งให้ทราบให้ล่วงหน้า*
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">ยืนยัน</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+<script src="{%static 'js/script.js'%}"></script>
+
+</html>

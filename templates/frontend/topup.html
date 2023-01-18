@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRONGPOK69</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link href="{%static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{%static 'img/logo.png' %}" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <a href="login.html" class="btn btn-outline-link" type="button">เข้าสู่ระบบ</a>
+                    <a href="register.html" class="btn btn-primary" type="button">สมัครสมาชิก</a>
+                    <!-- LIGHT SWITCH -->
+                    <div class="d-flex">
+                        <div class="form-check form-switch ms-2 mt-0 me-3">
+                        <label class="form-check-label ms-3" for="lightSwitch">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-brightness-high"
+                            viewBox="0 0 16 16"
+                            >
+                            <path
+                                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                            />
+                            </svg>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-3 px-sm-0">
+        <div class="container border border-1 bg-white shadow px-5 py-5 pb-2 mb-5 d-grid gap-3 rounded-5 bg-topup">
+            <div class="row gy-5 px-3 px-sm-5 justify-content-around">
+                <div class="col-12 col-sm-4">
+                    <div class="text-center mb-2">
+                        <img width="25%" src="{%static 'img/king.png' %}" alt="">
+                    </div>
+                    <div class="bg-primary py-2 rounded-3 mb-4">
+                        <h3 class="mb-0 text-white text-center">แพคเกจ A</h3>
+                    </div>
+                    <div class="topup-list mb-4">
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            เปิดการแสดงผลประกาศ
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            แสดงประกาศในหน้าแผนที่
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            เปิดใช้งานระบบป้องกันการผิดนัด
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            แสดงประกาศทุกหน้าค้นหา       
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            เปิดใช้งานระบบสุ่ม
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary w-100 mb-2 rounded-5">
+                        <img class="icon-coin invisible" width="15" src="{%static 'img/king.png' %}" alt="">
+                        129 เหรียญ / 7 วัน
+                    </button>
+                    <button type="button" class="btn btn-primary w-100 mb-2 rounded-5">
+                        <img class="icon-coin" width="15" src="{%static 'img/coin.png' %}" alt="">
+                        249 เหรียญ / 14 วัน
+                    </button>
+                    <button type="button" class="btn btn-outline-primary w-100 mb-2 rounded-5">
+                        <img class="icon-coin invisible" width="15" src="{%static 'img/coin.png' %}" alt="">
+                        389 เหรียญ / 30 วัน
+                    </button>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="text-center mb-3">
+                        <img width="25%" src="{%static 'img/vip-label.png' %}" alt="">
+                    </div>
+                    <div class="bg-danger py-2 rounded-3 mb-4">
+                        <h3 class="mb-0 text-white text-center">แพคเกจ A</h3>
+                    </div>
+                    <div class="topup-list mb-4">
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            แสดงผลด้านบนสุดเสมอ
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            แสดงผลแนะนำด้านบนสุดตลอดเวลา
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            แสดงผลการค้นหาด้านบนสุดเสมอ
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            ได้รับตราสัญลักษณ์ Hot       
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            เพิ่มความโดดเด่นตลอดเวลา
+                        </p>
+                        <p class="fs-6 mb-1">
+                            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                            ครอบคลุมแพคเกจ A
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-danger w-100 mb-2 rounded-5">
+                        <img class="icon-coin" width="15" src="{%static 'img/coin.png' %}" alt="">
+                        799 เหรียญ / 7 วัน
+                    </button>
+                    <button type="button" class="btn btn-outline-danger w-100 mb-2 rounded-5">
+                        <img class="icon-coin invisible" width="15" src="{%static 'img/coin.png' %}" alt="">
+                        1,499 เหรียญ / 14 วัน
+                    </button>
+                    <button type="button" class="btn btn-outline-danger w-100 mb-2 rounded-5">
+                        <img class="icon-coin invisible" width="15" src="{%static 'img/coin.png' %}" alt="">
+                        2,899 เหรียญ / 30 วัน
+                    </button>
+                </div>
+                <div class="col-12">
+                    <p class="text-center mb-0">
+                        *กรุญาเติมเหรียญก่อนซื้อแพคเกจ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center gx-0 text-primary">
+                <div class="col-4 col-sm-5">
+                    <img src="{%static 'img/promotion.png' %}" alt="">
+                </div>
+                <div class="col-8 col-sm-7">
+                    <h2 class="topup-heading fw-semibold">
+                        เติมเหรียญครั้งแรกรับเพิ่มทันที *2
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <h3 class="fs-4 fw-normal">
+                        สวัสดี [ชื่อที่ใช้สมัคร]
+                    </h3>
+                    <h3 class="fs-4 fw-normal">
+                        ยินดีต้อนรับเข้าสู่ระบบจัดการเหรียญ
+                    </h3>
+                </div>
+            </div>
+            <div class="row g-3 align-items-stretch mb-3">
+                <div class="col col-sm-10">
+                    <div class="row g-3 align-items-stretch mb-2">
+                        <div class="col-auto">
+                            <img width="50" src="{%static 'img/pngwing.png' %}" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center justify-content-center bg-primary2 h-100 rounded-3">
+                                <div class="col-auto">
+                                    <span class="d-inline-block bg-white text-black px-5 py-1 rounded-3 border-0 text-center dark-bgwhite">
+                                        700
+                                    </span>
+                                    <span class="d-inline-block ps-1 ps-sm-4 dark-textblack">
+                                        เหรียญ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-auto">
+                            <p>ประวัติการใช้เหรียญ</p>
+                        </div>
+                        <div class="col-auto">
+                            <p>ประวัติการเติมเหรียญ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2">
+                    <button type="button" class="text-center w-100 btn py-2 btn-primary">เติมเหรียญ</button>
+                </div>
+            </div>
+            <div class="row gx-5 mb-5">
+                <div class="col-12 col-sm-6 order-2 order-sm-1">
+                    <img class="d-block mx-auto" width="75%" src="{%static 'img/truemoney.png' %}" alt="">
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <div class="bg-primary text-white text-center rounded-3 py-2">
+                                <h5 class="fs-4 mb-0">
+                                    ราคาบัตร
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-yellow text-white text-center rounded-3 py-2">
+                                <h5 class="fs-4 mb-0">
+                                    ราคาบัตร
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">50</div>
+                                <div class="col-6 text-center">50</div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">90</div>
+                                <div class="col-6 text-center">90</div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">150</div>
+                                <div class="col-6 text-center">150</div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">300</div>
+                                <div class="col-6 text-center">300</div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">500</div>
+                                <div class="col-6 text-center">500</div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-6 text-center">1000</div>
+                                <div class="col-6 text-center text-orange">1100</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 order-1 order-sm-1 pt-sm-5">
+                    <div class="bg-primary2 rounded-3 py-5 px-3 px-sm-4">
+                        <h3 class="text-primary mb-3 mt-sm-5">
+                            *กรอกรหัสบัตรทรูมันนี่ 
+                        </h3>
+                        <input type="text" class="form-control border-0 w-75 mb-3">
+                        <button type="button" class="btn btn-warning mb-4">เติมเหรียญ</button>
+                        <p class="pb-sm-3 dark-textblack">
+                            *กรอกรหัสผิดหรือรหัสซ้ำติดต่อกัน 3 ครั้ง <br/>
+                            ช่องทางการเติมพอยท์จะถูกระงับ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="{%static 'js/script.js' %}"></script>
+<script src="{%static 'js/switch.js' %}"></script>
+</html>

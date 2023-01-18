@@ -1,0 +1,15 @@
+version: "3"
+services:
+    web:
+        image: django
+        build: .
+        container_name: django
+        # env_file: .env
+        ports:
+            - "80:8000"
+        volumes:
+            - ./members:/members
+            - ./static:/static
+            - ./templates:/templates
+            - ./tp69:/tp69
+            - ./manage.py:/manage.py
